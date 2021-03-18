@@ -66,22 +66,62 @@ form .btn-login {
   margin: auto;
   padding: 7px;
 }
-/*---- Aparição do Form ----*/
+
+/* APARIÇÃO DO FORM */
 form {
   overflow: hidden;
+  animation: fade 0.2s;
 }
 
-form .input-block{
-  animation-name: move;
-  animation-duration: 500ms;
+form .input-block:nth-child(1) {
+  animation: move 500ms;
+}
+
+form .input-block:nth-child(2) {
+  animation: move 400ms;
+  animation-delay: 100ms;
+  animation-fill-mode: backwards;
+}
+
+form .btn-login {
+  animation: move 400ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards;
 }
 
 @keyframes move {
   from {
     opacity: 0;
     transform: translateX(-35%);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateX(0%);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Quando clicar no botão, sumir com o form */
+.form-hide {
+  animation: down 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes down {
+  from {
+    transform: translateY(0);
+
+  }to {
+    transform: translateY(100vh);
   }
 }
