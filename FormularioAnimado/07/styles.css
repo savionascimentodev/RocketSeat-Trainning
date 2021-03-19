@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: serif;
+  font-weight: 500;
 }
 
 html,
@@ -10,7 +12,7 @@ body {
 }
 
 body {
-  background-color: #7159c1;
+  background-color: rgb(139, 4, 4);
   font-family: Roboto, Arial, sans-serif;
 }
 
@@ -25,12 +27,12 @@ h1 {
   font-size: 32px;
   letter-spacing: 1px;
   margin: 20px 0;
-  color: white;
+  color: rgb(48, 2, 2);
 }
 
 form {
   margin: 20px 0;
-  background-color: white;
+  background-color: #f1f2f5;
   padding: 30px 25px;
   border-radius: 5px;
 }
@@ -41,7 +43,7 @@ form .input-block {
 
 form .input-block label {
   font-size: 14px;
-  color: darkslateblue;
+  color: rgb(139, 4, 4);
 }
 
 form .input-block input {
@@ -50,21 +52,26 @@ form .input-block input {
   margin-top: 8px;
   padding: 7px;
   font-size: 16px;
-  color: #7159c1;
+  color: rgb(139, 4, 4);
   border-radius: 2px;
   border: 1px solid #ccddef;
-  outline-color: #7159c1;
+  outline-color: rgb(139, 4, 4);
 }
 
 form .btn-login {
   display: block;
   min-width: 120px;
   border: none;
-  background-color: #7159c1;
+  background-color: rgb(139, 4, 4);
   color: white;
   border-radius: 25px;
   margin: auto;
   padding: 7px;
+}
+form .btn-login:hover {
+  background-color: rgb(194, 10, 10);
+  color: white;
+  
 }
 
 /* APARIÇÃO DO FORM */
