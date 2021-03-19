@@ -2,6 +2,8 @@
 
 ## Desafios
 
+https://rocket-seat-trainning.vercel.app/
+
 - [x] Fazer o formulário aparecer, suavemente, quando a página abrir
 - [x] Fazer os campos aparecem da esquerda pra direita, suavizando a entrada e fazendo-os entrar em momentos distintos
 - [x] Quando clicar em Login, fazer o formulário sair da tela, indo para baixo
