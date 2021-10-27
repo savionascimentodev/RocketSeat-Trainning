@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=main">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <script>
+      async function getContent() {
+        try {
+          const response = await fetch('https://localhost:3000/user')
+        } catch (error) {
+          console.error(error)
+        }
+      }
+
+      getContent()
+    </script>
+  </main>
+</body>
+
+</html>
